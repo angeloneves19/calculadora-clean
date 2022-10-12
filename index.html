@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Principal">
+        <div id="Calculadora">  
+            <input id="tela" type="textbox" class="textbox">
+            <div id="teclado" class="buttons">
+                <button class="button" onclick="limpar()" value="C">C</button>
+                <button class="button" value="()">()</button>
+                <button class="button" onclick="showNumber('%')" value="%" class="operador">%</button>
+                <button class="button" onclick="showNumber('/')" value="/" class="operador">/</button><br>
+
+                <button class="button" onclick="showNumber(7)" value="7">7</button>
+                <button class="button" onclick="showNumber(8)" value="8">8</button>
+                <button class="button" onclick="showNumber(9)" value="9">9</button>
+
+                <button class="button"  onclick="showNumber('*')"value="*" class="operador">*</button><br>
+
+                <button class="button" onclick="showNumber(4)" value="4">4</button>
+                <button class="button" onclick="showNumber(5)" value="5">5</button>
+                <button class="button" onclick="showNumber(6)" value="6">6</button>
+
+                <button class="button" onclick="showNumber('-')" value="-" class="operador">-</button><br>
+
+                <button class="button" onclick="showNumber(1)" value="1">1</button>
+                <button class="button" onclick="showNumber(2)" value="2">2</button>
+                <button class="button" onclick="showNumber(3)" value="3">3</button>
+
+                <button class="button" onclick="showNumber('+')" value="+">+</button><br>
+
+                <button class="button" onclick="showNumber()" value=".">.</button>
+                <button class="button" onclick="showNumber(0)" value="0">0</button>
+                <button class="button" value=",">,</button>
+                <button class="button" onclick="showResult()" value="=">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
